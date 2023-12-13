@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE botiga SYSTEM "arxiuDTD.dtd">
+<botiga>
+    <estoc estat="disponible">  
+        <producte categoria="productes dolços" id="Xnegra">
+            <Nom>Xocolata negra</Nom>
+            <azucar>Poco</azucar>
+        </producte>
+        <producte categoria="productes dolços" id="Xblanca">
+            <Nom>Xocolata blanca</Nom>
+            <azucar>Demasiado</azucar>
+        </producte>
+        <producte categoria="productes dolços" id="XambLlet" >
+            <Nom>Xocolata amb llet</Nom>
+            <azucar>Mucho</azucar>
+        </producte>
+    </estoc>
+    <clients idioma="català">
+        <majors_edat edat="major que 18">
+            <homes>
+                <nom id="cliente1">Joan</nom>
+                <data_naixement>2002-02-01</data_naixement>
+                <poblacio>Barcelona</poblacio>
+                <historial id="1">Id dels productes comprats</historial>
+            </homes>
+            <dones>
+                <nom id="cliente2">Ari</nom>
+                <data_naixement>2002-02-12</data_naixement>
+                <poblacio>Barcelona</poblacio>
+                <historial id="2">id dels productes comprats</historial>
+            </dones>
+        </majors_edat>
+        <menors_edat edat="menor que 18">
+            <homes>
+                <nom id="cliente3">Pere</nom>
+                <data_naixement>2021-02-21</data_naixement>
+                <poblacio>Barcelona</poblacio>
+                <historial id="3">Id dels productes comprats</historial>
+            </homes>
+            <dones>
+                <nom id="cliente4">Marta</nom>
+                <data_naixement>2023-03-09</data_naixement>
+                <poblacio>Barcelona</poblacio>
+                <historial id="4">Id dels productes comprats</historial>
+            </dones>
+        </menors_edat>
+    </clients>
+</botiga>

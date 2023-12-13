@@ -1,0 +1,28 @@
+<!ELEMENT botiga (estoc, clients)>
+<!ELEMENT estoc (producte*)>
+<!ATTLIST estoc estat CDATA #REQUIRED>
+
+<!ELEMENT producte (Nom, azucar)>
+<!ATTLIST producte categoria CDATA #REQUIRED>
+<!ATTLIST producte id CDATA #REQUIRED>
+
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT azucar (#PCDATA)>
+
+<!ELEMENT clients (majors_edat, menors_edat)>
+<!ATTLIST clients idioma CDATA #REQUIRED>
+
+<!ELEMENT majors_edat (homes+, dones+)>
+<!ATTLIST majors_edat edat CDATA #REQUIRED>
+
+<!ELEMENT homes (nom, data_naixement, poblacio?, historial)>
+<!ELEMENT dones (nom, data_naixement, poblacio?, historial)>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom id ID #REQUIRED>
+<!ELEMENT data_naixement (#PCDATA)>
+<!ELEMENT poblacio (#PCDATA)>
+<!ELEMENT historial (#PCDATA)>
+<!ATTLIST historial id CDATA #REQUIRED>
+
+<!ELEMENT menors_edat (homes+, dones+)>
+<!ATTLIST menors_edat edat CDATA #REQUIRED>
